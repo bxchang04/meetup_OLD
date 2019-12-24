@@ -1,0 +1,18 @@
+# For full config options, check the docs:
+#    docs.serverless.com
+
+service: auth-server
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: eu-central-1
+  timeout: 60
+
+functions:
+  getAccessToken:
+    handler: handler.getAccessToken
+    events:
+      - http:
+        path: api/token/{code}
+        method: get
