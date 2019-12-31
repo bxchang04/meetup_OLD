@@ -1,1 +1,26 @@
-https://secure.meetup.com/oauth2/authorize?client_id=YOUR_CONSUMER_KEY&response_type=code&redirect_uri=bxchang04.github.io/meetup”
+Prior to authorization:
+
+Full
+https://secure.meetup.com/oauth2/authorize?client_id=3dssascu6mej4fuptij43jdbh4&response_type=code&redirect_uri=https://bxchang04.github.io/meetup”
+
+Consumer key:
+3dssascu6mej4fuptij43jdbh4
+
+Post authorization:
+
+full
+https://bxchang04.github.io/meetup%20?code=137644aff4659fced3d53371ce3b7042
+
+auth code
+137644aff4659fced3d53371ce3b7042
+
+
+
+Progressed until:
+
+Deploying Your Function
+Once you’ve finished writing and testing your function, you can deploy it to see if it executes correctly in the real world. Back in your terminal, run the following command:
+
+serverless deploy
+
+This command deploys your function to AWS Lambda using the information provided in the “serverless.yml” config file. Once it’s run, you should see the following deployment information in your terminal:
